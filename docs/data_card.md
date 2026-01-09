@@ -85,3 +85,24 @@ Non-academic and lifestyle-related variables generally show weak correlations wi
 | G1 | integer | grade (0–20) | First period grade |
 | G2 | integer | grade (0–20) | Second period grade (target) |
 | G3 | integer | grade (0–20) | Final grade (target) |
+
+## Data cleaning and normalization
+
+The following preprocessing steps were applied to the raw dataset:
+
+- Target variables (G2, G3) were separated from input features
+- Categorical variables were encoded using one-hot encoding
+- Numerical features were normalized using Min-Max scaling
+- No rows were removed, as the dataset contained no missing or duplicate values
+
+The processed dataset was exported as: "student_data_cleaned.csv"
+
+## Data lineage
+
+- Raw dataset: data/raw/student_data.csv
+- Cleaning notebook: notebooks/02_cleaning.ipynb
+- Processed dataset: data/processed/student_data_cleaned.csv
+
+This lineage ensures traceability between the original data and the dataset used for model training.
+
+
