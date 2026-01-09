@@ -31,7 +31,7 @@ The model was evaluated on a held-out test set representing 20% of the dataset.
 - RMSE: 2.9
 - R² score: 0.59
 
-These metrics indicate the model’s ability to predict final student grades.
+The results indicate a moderate predictive performance. The lower performance compared to the G2 model is expected, as the final grade is influenced by additional factors not fully captured by the available features.
 
 ## Limitations
 - Strong dependence on intermediate grades (G1, G2)
